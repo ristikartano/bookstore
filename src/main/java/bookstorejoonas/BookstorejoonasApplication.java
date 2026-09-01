@@ -1,4 +1,4 @@
-package com.example.bookstorejoonas;
+package bookstorejoonas;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
