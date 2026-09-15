@@ -17,6 +17,7 @@
             <th>Title</th>
             <th>ISBN</th>
             <th>year</th>
+            <th></th>
         </tr>
 
         <tr th:each="book : ${booklist}">
@@ -26,11 +27,15 @@
             <td th:text="${book.isbn}"></td>
             <td th:text="${book.publicationYear}"></td>
 
+            <td>
+                <a th:href="@{/delete/{id}(id=${book.id})}">Delete</a>
+            </td>
+
         </tr>
 
     </table>
 
-
+    <p><a th:href="@{/addbook}">Add Book</a></p>
 
 
 </body>
