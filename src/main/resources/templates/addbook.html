@@ -13,6 +13,8 @@
 
     <form th:action="@{/savebook}" th:object="${book}" method="post">
 
+        <input type="hidden" th:field="*{id}">
+
         Title:
         <input type="text" th:field="*{title}">
 
