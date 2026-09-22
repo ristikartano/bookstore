@@ -30,6 +30,12 @@
         Price:
         <input type="number" step="0.01" th:field="*{price}">
 
+        Category:
+        <select th:field="*{category}">
+            <option th:each="category : ${categories}" th:value="${category.id}" th:text="${category.name}">
+            </option>
+        </select>
+
         <input type="submit" value="Save">
 
     </form>
