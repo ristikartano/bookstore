@@ -12,6 +12,7 @@ import bookstorejoonas.domain.Book;
 import bookstorejoonas.domain.BookRepository;
 import bookstorejoonas.domain.CategoryRepository;
 
+
 @Controller
 public class BookController {
 
@@ -63,5 +64,12 @@ public class BookController {
 
         return "addbook";
     }
+
+    @GetMapping("/login")
+    public String login() {
+        return "login";
+    }
+    
+
 
 }
